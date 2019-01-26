@@ -3,24 +3,22 @@
 # Resolving gettext as _ for module loading.
 from gettext import gettext as _
 
-SKILL_NAME = "Gloucester Guide"
+SKILL_NAME = "Gartner Magic Quadrant Search"
 
-WELCOME = _("Welcome to Gloucester Guide!")
-HELP = _("Say about, to hear more about the city, or say coffee, breakfast, lunch, or dinner, to hear local restaurant suggestions, or say recommend an attraction, or say, go outside. ")
-ABOUT = _("Gloucester Massachusetts is a city on the Atlantic Ocean. A popular summer beach destination, Gloucester has a rich history of fishing and ship building.")
+WELCOME = _("Welcome to Gartner Magic Quadrant Search")
+HELP = _("Say a keyword to search for an article.")
+ABOUT = _("Gartner Magic Quadrant research methodology provides a graphical competitive positioning of four types of technology providers in fast-growing markets: Leaders, Visionaries, Niche Players and Challengers.")
 STOP = _("Okay, see you next time!")
 FALLBACK = _("The {} can't help you with that. It can help you learn about Gloucester if you say tell me about this place. What can I help you with?")
 GENERIC_REPROMPT = _("What can I help you with?")
 
-CITY_DATA = {
-    "city": "Gloucester",
-    "state": "MA",
-    "postcode": "01930",
-    "restaurants": [
+ARTICLE_DATA = {
+    "keywords": [
         {
-            "name": "Zeke's Place",
-            "address": '66 East Main Street',
-            "phone": '978-283-0474',
+            "title": "Zeke's Place",
+            "authors": '66 East Main Street',
+            "summary": '978-283-0474',
+            
             "meals": 'breakfast, lunch',
             "description": 'A cozy and popular spot for breakfast.  Try the blueberry french toast!',
         },
@@ -58,28 +56,6 @@ CITY_DATA = {
             "phone": '978-281-1910',
             "meals": 'coffee, breakfast, lunch',
             "description": 'A highly rated local diner with generously sized plates.',
-        },
-    ],
-    "attractions": [
-        {
-            "name": 'Whale Watching',
-            "description": 'Gloucester has tour boats that depart twice daily from Rogers street at the harbor.  Try either the 7 Seas Whale Watch, or Captain Bill and Sons Whale Watch. ',
-            "distance": '0',
-        },
-        {
-            "name": 'Good Harbor Beach',
-            "description": 'Facing the Atlantic Ocean, Good Harbor Beach has huge expanses of soft white sand that attracts hundreds of visitors every day during the summer.',
-            "distance": '2',
-        },
-        {
-            "name": 'Rockport',
-            "description": 'A quaint New England town, Rockport is famous for rocky beaches, seaside parks, lobster fishing boats, and several art studios.',
-            "distance": '4',
-        },
-        {
-            "name": 'Fenway Park',
-            "description": 'Home of the Boston Red Sox, Fenway park hosts baseball games From April until October, and is open for tours. ',
-            "distance": '38',
         },
     ],
 }
